@@ -1,44 +1,42 @@
-// STEP 1: Print text to the browser console is string ""
+// Exercise 1 – Developer Tools and Console
 
-console.log("Hello World!");
+console.log("Hello, World!"); 
+alert("Hello, World!");
 
-// STEP 2: Variables
+//Exercise 2 – Variables
 
 const userName = "krishna";
-const favoriteAnimal = "Blue Elephant";
+let  userAge = 25;
+const favouriteanimal = "dolphin";
 
-// Store text values in variables
+console.log("My name is " + userName + ", I am " + userAge + " years old, and my favourite animal is a " + favouriteanimal + ".");
 
+//Exercise 3 – User Input
 
-// Print the variables to the console
+let  guestuser = prompt("What is your name?");
 
-console.log("My name is " + userName + " and my favorite animal is " + favoriteAnimal + ".");
+console.log("Hello, " + guestuser + "! Welcome to the JavaScript exercise.");
 
-// STEP 3: User interaction
+// Exercise 4 – Conditionals
 
-// Display a pop-up message
-alert("Welcome to the blue elephant club!");
+let guestAge = prompt("How old are you?");
 
-// Ask the user for their name
-
-const visitorName = prompt("What is your name?");
-
-// Print the user's answer
-console.log("Hello, " + visitorName + "!");
- 
-// Create a greeting using the user's answer
-console.log("Hello, " + visitorName + "! Welcome to the blue elephant club!");
-
-// Ask the user for their favorite animal
-const favoriteAnimalInput = prompt("What is your favorite animal?");
-
-// Create a sentence using both answers
-console.log("Hello,"+ visitorName + "! It seems like you like " + favoriteAnimalInput + "!");
-
-// ⭐⭐ BONUS Ask the user for their favorite animal.If their favorite animal is "Blue Elephant", print: Great choice! That's my favorite animal too!
-// ⭐⭐ BONUS Otherwise, print: Nice! Your favorite animal is [animal]. Can you figure out how to do this using if / else?
-if (favoriteAnimalInput.toLowerCase() === "blue elephant") {
-    console.log("Great choice! That's my favorite animal too!");
+if (guestAge >= 18) {
+    console.log("You are an adult.");
 } else {
-    console.log("Nice! Your favorite animal is " + favoriteAnimalInput + ".");
+    console.log("You are under 18");
+}
+
+//Exercise 5 – Functions
+
+function greetUser(name) {
+    console.log("Hello, " + name );
+}
+
+greetUser(guestuser);
+
+//Bonus – Connect JavaScript to the Page
+
+showMessage = () => {
+    alert("Hello, " + guestuser + "! Welcome to the JavaScript exercise.");
 }
