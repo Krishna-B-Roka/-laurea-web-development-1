@@ -1,0 +1,35 @@
+body {
+    font-family: sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    color: #083868;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+img {
+    display: block;
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: #174ec5;
+    font-weight: bold;
+}
+
+a.hover {
+    text-decoration: underline;
+}

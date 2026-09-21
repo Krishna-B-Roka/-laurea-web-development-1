@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorite Animal</title>
+    
+    <link rel="stylesheet" href="styles/styles.css">
+    
+</head>
+<body>
+    <h1 id="Exercise1">My Favorite Animal</h1>
+    <p>My favorite animal is the dolphin. Dolphins are highly intelligent marine mammals known for their playful behavior and social nature. They are found in oceans and seas around the world and are known for their acrobatic displays and communication skills.</p>
+    <img src="img/dolphin.jpg" alt="A dolphin swimming in the ocean" width="500"><br>
+    
+    <a href="https://en.wikipedia.org/wiki/Dolphin" target="_blank">
+        Learn more about dolphins
+    </a>
+     <p>
+        <button id="clickButton">Click me</button>
+       <button id="showtable">Show Animal table</button>
+        <table id="animalTable" style="display: none;">
+        <thead>
+            <tr>
+                <th>Animal</th>
+                <th>Habitat</th>
+                <th>Diet</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Tiger</td>
+                <td>Forest</td>
+                <td>Carnivore</td>
+            </tr>
+            <tr>
+                <td>Elephant</td>
+                <td>Savanna</td>
+                <td>Herbivore</td>
+            </tr>
+        </tbody>
+    </p>
+<h2>Exercise 3 and 4: input Event and Form Submission</h2>
+    <form id="feedbackForm">
+        <textarea id="feedback" maxlength="200" placeholder="Write your feedback..."></textarea>
+
+        <p id="status"></p>
+
+        <p id="charCount">0/200</p>
+        <button id="submitBtn">Submit</button>
+        <div id="preview">
+            (The preview will appear here)
+        </div>
+    </form>
+
+<h2>Exercise 5: Keyboard Events</h2>
+
+    <p>Press any key...</p>
+    <p id="keyinfo">No key pressed yet.</p>
+    <div id="keybox">?</div>
+    <p id="keyCounter">Key presses: 0</p>
+    <p id="modifierInfo">Shift: No | Ctrl: No | Alt: No</p>
+    
+    
+    <script src="script.js" defer></script>
+</body>
+</html>
