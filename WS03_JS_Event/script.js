@@ -101,35 +101,3 @@ document.addEventListener("keydown", function (event) {
     // check for modifier keys
     modifierInfo.textContent = "shift: " + (event.shiftKey ? "Yes" : "No") + " | ctrl: " + (event.ctrlKey ? "Yes" : "No") + " | alt: " + (event.altKey ? "Yes" : "No");
 });
-
-//Bonus Exercise: Google Maps
-
-const locationButton = document.getElementById("locationButton");
-const locationstatus = document.getElementById("locationstatus");
-
-locationButton.addEventListener("click", function () {
-
-
-    locationstatus.textContent = "Getting your location...";
-
-    navigator.geolocation.getCurrentPosition(
-
-        function (position) {
-
-            const lat = position.coords.latitude;
-            const lon = position.coords.longitude;
-
-            console.log("Latitude:", lat);
-            console.log("Longitude:", lon);
-
-            const url = `https://www.google.com/maps?q=${lat},${lon}`;
-
-            window.open(url, "_blank");
-        },
-
-        function (error) {
-            locationstatus.textContent =
-                "Could not get the location: " + error.message;
-        }
-    );
-});
